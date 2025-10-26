@@ -94,16 +94,54 @@
   // console.log(person1);
   // console.log(person2);
 
-  function Subscribe() {
-    document.getElementById('btn').innerHTML = 'Subscribed';
-    document.getElementById('btn').style.backgroundColor = '#262626';
-
-  }
   
 
   function like() {
     document.getElementById('like').innerHTML = '<i class="fa-regular fa-thumbs-up"></i> liked';
   }
+
+  function Keypress() {
+    document.getElementById('text').innerHTML = 'Key presed';
+  }
+
+  function onLoad() {
+    alert('Testing javascript onload');
+    document.getElementById('text').innerHTML = 'Website Loeaded Properly';
+  }
+  
+  document.getElementById('btn').onclick = function () {
+    document.getElementById('btn').innerHTML = 'Subscribed';
+  }
+   
+  
+
+  function windowResize() {
+    document.getElementById('textarea').style.height = '100px';
+    document.getElementById('form').style.fontFamily = 'Courier New';
+    document.getElementById('form').style.color = '#ff0000';
+  }
+  
+  function onScroll() {
+    document.getElementById('text').innerHTML = 'Scrolling';
+  }
+  
+  document.getElementById('ul').addEventListener(
+    'click',
+    function (e) {
+      console.log('UL Clicked');
+      
+    }
+    true
+  );
+
+  document.getElementById('li').addEventListener(
+    'click',
+    function (e) {
+      console.log('Li Clicked');
+      
+    }
+    true
+  );
   
   
   

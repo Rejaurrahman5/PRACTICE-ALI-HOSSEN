@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,44 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0df03fb8a9.js" crossorigin="anonymous"></script>
 </head>
-<body>
+
+<body onscroll=" onScroll()">
+
+    <script>
+
+        const Subscribe = () => {
+            document.getElementById("subBtn").innerText = 'Subscribed'
+        }
+
+    </script>
+
     <h1 id="title">Javascript is fun</h1>
-    <button  id="btn" onclick="subscribe()">Subscribe</button>
-    <h2> id="text"</h2>
-    <button id="like" onclick="like()"><i class="fa-regular fa-thumbs-up"></i>like</button>
-    
+    <button id="subBtn" onclick="Subscribe()">Subscribe</button>
+    <h2 id="text"></h2>
+    <!-- <button id="like" onclick="like()"><i class="fa-regular fa-thumbs-up"></i>like</button>  -->
+
+    <form action="" id="form" onkeypress="Keypress();">
+        <label for="">Name</label>
+        <input type="text" placeholder="Enter Your Name">
+        <label for="">Email</label>
+        <input type="text" placeholder="Enter Your Email">
+        <label for="">Message</label>
+        <textarea id="textarea" placeholder="Enter Your Message"></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+
+    <ul id="ul">
+        <li id="li">Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+
     <script src="app.js"></script>
-   
-   
-    
+
+
 </body>
+
 </html>

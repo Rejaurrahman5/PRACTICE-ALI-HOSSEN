@@ -4,7 +4,8 @@ body {
 }
 
 
-button {
+button,
+#form input[type='submit'] {
     background: red;
     padding:20px 45px;
     color: white;
@@ -15,7 +16,35 @@ button {
     cursor: pointer;
     
 }
-button:hover {
+button:hover,
+#form input[type='submit'] {
     background: black;
     
+}
+
+#form {
+    width: 90%;
+    padding: 2%;
+
+
+}
+#form label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+#form input,
+#form textarea {
+    width: 90%;
+    padding: 10px 4%;
+
+}
+
+#form input[type='submit'] {
+    width: 100%;
+    margin-top: 10px;
+}
+ul{
+    text-align: left;
 }
